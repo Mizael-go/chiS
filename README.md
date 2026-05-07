@@ -7,7 +7,7 @@ A Custom chi init project
 Install the package:
 
 ```bash
-go install github.com/ptdrpg/chiS@latest
+go install github.com/Mizael-go/chiS@latest
 ```
 
 ### Use
