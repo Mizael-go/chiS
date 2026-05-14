@@ -54,6 +54,10 @@ func Create(directory string, db string) {
 		handler.ErrorHandler(err)
 	}
 	main.Close()
+	_, err = os.Create(filepath.Join(directory, "chis.md"))
+	if err != nil {
+		handler.ErrorHandler(err)
+	}
 
 	templates.ConfigDB(directory, db)
 	templates.WriteMain(directory)

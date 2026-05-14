@@ -1,10 +1,10 @@
 package handler
 
 import (
-	"fmt"
+	"log"
 )
 
-//handle error
+// handle error
 func ErrorHandler(props error) {
-	fmt.Println(props.Error())
+	log.Fatalf("error: %s", props.Error())
 }
