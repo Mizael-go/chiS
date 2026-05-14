@@ -5,8 +5,8 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/ptdrpg/chiS/handler"
-	"github.com/ptdrpg/chiS/templates"
+	"github.com/Mizael-go/chiS/handler"
+	"github.com/Mizael-go/chiS/templates"
 )
 
 // create project's base
