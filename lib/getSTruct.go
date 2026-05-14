@@ -1,7 +1,7 @@
 package lib
 
 import (
-	"fmt"
+	// "fmt"
 	"go/ast"
 	"go/parser"
 	"go/token"
@@ -10,16 +10,25 @@ import (
 	"github.com/Mizael-go/chiS/handler"
 )
 
-func GetStruct(filename string) {
+type ModelInfo struct {
+	Name string
+	Path string
+}
+
+func GetStruct(filename string) []ModelInfo {
 	fset := token.NewFileSet()
 	src, err := os.ReadFile(filename)
 	if err != nil {
 		handler.ErrorHandler(err)
+		return []ModelInfo{}
 	}
 	file, err := parser.ParseFile(fset, filename, src, parser.ParseComments)
 	if err != nil {
 		handler.ErrorHandler(err)
+		return []ModelInfo{}
 	}
+
+	var models []ModelInfo
 
 	ast.Inspect(file, func(n ast.Node) bool {
 		genDecl, ok := n.(*ast.GenDecl)
@@ -33,13 +42,13 @@ func GetStruct(filename string) {
 				continue
 			}
 
-			// structType, ok := typeSpec.Type.(*ast.StructType)
-			// if !ok {
-			// 	continue
-			// }
-
 			structName := typeSpec.Name.Name
-			fmt.Printf("struct : %v\n", structName)
+			mdl := ModelInfo{
+				Name: structName,
+				Path: filename,
+			}
+			models = append(models, mdl)
+			// fmt.Printf("struct : %v\n", structName)
 			// for _, field := range structType.Fields.List {
 			// 	//if field have name
 			// 	if field.Names != nil {
@@ -57,5 +66,5 @@ func GetStruct(filename string) {
 		}
 		return true
 	})
-
+	return models
 }
