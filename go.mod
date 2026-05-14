@@ -1,4 +1,4 @@
-module github.com/ptdrpg/chiS
+module github.com/Mizael-go/chiS
 
 go 1.23.6
 
