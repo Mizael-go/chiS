@@ -5,8 +5,8 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/Mizael-go/chiS/handler"
-	"github.com/Mizael-go/chiS/templates"
+	"github.com/Mizael-go/chit/handler"
+	"github.com/Mizael-go/chit/templates"
 )
 
 // create project's base

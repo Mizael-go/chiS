@@ -7,7 +7,7 @@ import (
 	"go/token"
 	"os"
 
-	"github.com/Mizael-go/chiS/handler"
+	"github.com/Mizael-go/chit/handler"
 )
 
 type ModelInfo struct {

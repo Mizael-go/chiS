@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Mizael-go/chiS/handler"
+	"github.com/Mizael-go/chit/handler"
 )
 
 func GenerateRepository(model string, directory string, fileName string) {

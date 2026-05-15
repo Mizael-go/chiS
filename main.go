@@ -1,6 +1,6 @@
 package main
 
-import "github.com/Mizael-go/chiS/cmd"
+import "github.com/Mizael-go/chit/cmd"
 
 func main() {
 	cmd.App()

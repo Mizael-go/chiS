@@ -8,9 +8,9 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/Mizael-go/chiS/handler"
-	"github.com/Mizael-go/chiS/lib"
-	"github.com/Mizael-go/chiS/templates"
+	"github.com/Mizael-go/chit/handler"
+	"github.com/Mizael-go/chit/lib"
+	"github.com/Mizael-go/chit/templates"
 )
 
 func Generate() {

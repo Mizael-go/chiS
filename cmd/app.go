@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Mizael-go/chiS/handler"
-	"github.com/Mizael-go/chiS/service"
+	"github.com/Mizael-go/chit/handler"
+	"github.com/Mizael-go/chit/service"
 )
 
 func App() {
