@@ -1,4 +1,4 @@
-module github.com/Mizael-go/chiS
+module github.com/Mizael-go/chit
 
 go 1.26.2
 
