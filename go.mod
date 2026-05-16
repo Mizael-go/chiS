@@ -2,9 +2,7 @@ module github.com/Mizael-go/chit
 
 go 1.26.2
 
-require (
-	github.com/AlecAivazis/survey/v2 v2.3.7
-)
+require github.com/AlecAivazis/survey/v2 v2.3.7
 
 require (
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
