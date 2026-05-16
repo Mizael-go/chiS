@@ -20,7 +20,7 @@ func main() {
 
 	`, directory)
 
-	err := os.WriteFile(filepath.Join(directory, "main.go"), []byte(content),0755)
+	err := os.WriteFile(filepath.Join(directory, "main.go"), []byte(content), 0755)
 	if err != nil {
 		handler.ErrorHandler(err)
 	}
