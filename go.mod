@@ -4,7 +4,6 @@ go 1.26.2
 
 require (
 	github.com/AlecAivazis/survey/v2 v2.3.7
-	github.com/Mizael-go/chiS v1.0.0
 )
 
 require (
