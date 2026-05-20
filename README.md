@@ -129,7 +129,6 @@ These are installed into the generated project (not into chit itself):
 
 ## Known issues / Caveats
 
-- `--help` is listed in `IsAllowed` but not handled in `cmd/app.go` — use `help` or `-h` instead
 - `chit.md` placeholder file is written to scaffolded projects but has no purpose
 - The `generate` command requires an existing `model/` directory with valid Go struct files
 
