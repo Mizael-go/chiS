@@ -73,7 +73,6 @@ import (
 	"encoding/json"
 	"net/http"
 	"%s/model"
-	"time"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/google/uuid"
@@ -109,8 +108,6 @@ func (c *Controller) Create%s(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	model.ID = uuid.New().String()
-	model.CreatedAt = time.Now().Format(time.DateTime)
-	model.UpdatedAt = time.Now().Format(time.DateTime)
 	model, err := c.R.Create%s(model)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
